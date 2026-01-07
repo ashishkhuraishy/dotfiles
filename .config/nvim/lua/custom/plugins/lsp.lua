@@ -181,16 +181,7 @@ return { -- LSP Configuration & Plugins
         },
       },
 
-      tailwindcss = {
-        filetypes = { 'templ', 'astro', 'javascript', 'typescript', 'react' },
-        settings = {
-          tailwindCSS = {
-            includeLanguages = {
-              templ = 'html',
-            },
-          },
-        },
-      },
+      tailwindcss = {},
       gopls = {
         settings = {
           gopls = {
@@ -198,7 +189,6 @@ return { -- LSP Configuration & Plugins
               '-tags=dev',
             },
             analyses = {
-              fieldalignment = true,
               nilness = true,
               unusedparams = true,
               unusedwrite = true,
@@ -211,7 +201,7 @@ return { -- LSP Configuration & Plugins
       },
 
       svelte = {
-        filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' },
+        -- filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' },
       },
     }
 
@@ -230,6 +220,7 @@ return { -- LSP Configuration & Plugins
       'stylua', -- Used to format Lua code
       'golangci-lint',
       'goimports-reviser',
+      -- { 'eslint_d', version = '13.1.2' },
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

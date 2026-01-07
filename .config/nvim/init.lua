@@ -161,6 +161,20 @@ require('lazy').setup {
 
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim', opts = {} },
+    -- {
+    --   'github/copilot.vim',
+    --   lazy = false,
+    --   keys = {
+    --     {
+    --       '<leader>cc',
+    --       function()
+    --         require('copilot').comment()
+    --       end,
+    --       mode = '',
+    --       desc = '[C]omment [C]ode',
+    --     },
+    --   },
+    -- },
 
     -- Here is a more advanced example where we pass configuration
     -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
@@ -391,7 +405,7 @@ require('lazy').setup {
         end,
         formatters_by_ft = {
           lua = { 'stylua' },
-          go = { 'goimports' },
+          go = { 'gofumpt', 'goimports-reviser', 'golines' },
           sh = { 'shfmt' },
           proto = { 'buf' },
           -- Conform can also run multiple formatters sequentially
@@ -401,6 +415,10 @@ require('lazy').setup {
           -- is found.
           javascript = { { 'prettierd', 'prettier' } },
           svelte = { 'prettier' },
+          astro = { 'prettierd', 'htmlbeautifier' },
+          typescript = { 'prettierd' },
+          typescriptreact = { 'prettierd' },
+          json = { 'prettierd' },
         },
       },
     },
@@ -434,14 +452,6 @@ require('lazy').setup {
       opts = {
         signs = false,
       },
-    },
-    {
-      'zbirenbaum/copilot.lua',
-      cmd = 'Copilot',
-      event = 'InsertEnter',
-      config = function()
-        require('copilot').setup {}
-      end,
     },
     -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
     -- init.lua. If you want these files, they are in the repository, so you can just download them and
