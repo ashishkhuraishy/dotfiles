@@ -122,6 +122,10 @@ export PATH=$PATH:$GOPATH/bin
 export GOPRIVATE=src.hifx.in/project-spatiumx/
 export GOINSECURE=src.hifx.in
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> da0415a (fix: removed some stuff)
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(zoxide init zsh)"
