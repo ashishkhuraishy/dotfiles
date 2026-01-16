@@ -165,7 +165,6 @@ return { -- LSP Configuration & Plugins
       -- But for many setups, the LSP (`tsserver`) will work just fine
       -- tsserver = {},
       --
-      bashls = {},
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
@@ -181,7 +180,6 @@ return { -- LSP Configuration & Plugins
         },
       },
 
-      tailwindcss = {},
       gopls = {
         settings = {
           gopls = {
@@ -198,10 +196,6 @@ return { -- LSP Configuration & Plugins
             gofumpt = true,
           },
         },
-      },
-
-      svelte = {
-        -- filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' },
       },
     }
 

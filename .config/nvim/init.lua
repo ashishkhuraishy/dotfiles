@@ -257,7 +257,7 @@ require('lazy').setup {
     { -- Fuzzy Finder (files, lsp, etc)
       'nvim-telescope/telescope.nvim',
       event = 'VimEnter',
-      branch = '0.1.x',
+      branch = 'master',
       dependencies = {
         'nvim-lua/plenary.nvim',
         { -- If encountering errors, see telescope-fzf-native README for installation instructions
@@ -404,20 +404,12 @@ require('lazy').setup {
           }
         end,
         formatters_by_ft = {
-          lua = { 'stylua' },
           go = { 'gofumpt', 'goimports-reviser', 'golines' },
-          sh = { 'shfmt' },
-          proto = { 'buf' },
           -- Conform can also run multiple formatters sequentially
           -- python = { "isort", "black" },
           --
           -- You can use a sub-list to tell conform to run *until* a formatter
           -- is found.
-          javascript = { { 'prettierd', 'prettier' } },
-          svelte = { 'prettier' },
-          astro = { 'prettierd', 'htmlbeautifier' },
-          typescript = { 'prettierd' },
-          typescriptreact = { 'prettierd' },
           json = { 'prettierd' },
         },
       },
@@ -436,7 +428,7 @@ require('lazy').setup {
       },
       init = function()
         -- Load the colorscheme here.
-        vim.cmd.colorscheme 'catppuccin'
+        -- vim.cmd.colorscheme 'catppuccin'
 
         -- You can configure highlights by doing something like:
         -- vim.cmd.hi 'Comment gui=none'

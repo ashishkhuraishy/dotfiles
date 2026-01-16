@@ -1,0 +1,151 @@
+[general]
+live_config_reload = true
+import = [
+	# "/Users/ashishkhuraishi/.config/alacritty/themes/themes/catppuccin_mocha.toml",
+	# "/Users/ashishkhuraishi/.config/alacritty/themes/themes/kanagawa_wave.toml",
+	"/Users/ashishkhuraishi/.config/alacritty/themes/themes/carbonfox.toml",
+	# "/Users/ashishkhuraishi/.config/alacritty/themes/ayu_dark.toml"
+]
+
+[mouse]
+hide_when_typing = true
+
+[window]
+decorations = "buttonless"
+dynamic_padding = true
+opacity = 0.75
+
+[window.padding]
+x = 18
+y = 12
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "FiraMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = """
+lf
+"""
+key = "F"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002x"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002\""
+key = "E"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002%"
+key = "E"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002[/"
+key = "F"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002z"
+key = "Z"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002n"
+key = "Tab"
+mods = "Control"
+
+# [[keyboard.bindings]]
+# chars = "\u0002p"
+# key = "Grave"
+# mods = "Control"
+#
+[[keyboard.bindings]]
+chars = "\u0002,"
+key = "Comma"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002:"
+key = "Semicolon"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002L"
+key = "L"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002s"
+key = "J"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002K"
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0002u"
+key = "O"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00021"
+key = "Key1"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00022"
+key = "Key2"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00023"
+key = "Key3"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00024"
+key = "Key4"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00025"
+key = "Key5"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00026"
+key = "Key6"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00027"
+key = "Key7"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00028"
+key = "Key8"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u00029"
+key = "Key9"
+mods = "Command"
+
+
