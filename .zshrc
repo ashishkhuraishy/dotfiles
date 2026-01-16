@@ -135,3 +135,4 @@ zle     -N             sesh-sessions
 bindkey -M emacs '^s' sesh-sessions
 bindkey -M vicmd '^s' sesh-sessions
 bindkey -M viins '^s' sesh-sessions
+alias ic="ibmcloud"
