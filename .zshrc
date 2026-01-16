@@ -79,7 +79,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 # source ~/.completions/*.sh
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
