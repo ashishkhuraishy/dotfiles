@@ -74,6 +74,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	fzf
+	kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,8 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="/Users/ashish/.nvm"
+export NVM_DIR="/Users/ashishkhuraishi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export SECRETS="/Users/ashishkhuraishi/.secrets"
+[ -s "$SECRETS/secrets.sh" ] && \. "$SECRETS/secrets.sh"
+
+# export PATH=$HOME/Library/Python/3.9/bin:$PATH 
 
 # Aliases
 alias python=python3
@@ -136,3 +142,9 @@ bindkey -M emacs '^s' sesh-sessions
 bindkey -M vicmd '^s' sesh-sessions
 bindkey -M viins '^s' sesh-sessions
 alias ic="ibmcloud"
+
+
+# source `icdctl setup zsh`
+
+# Created by `pipx` on 2026-01-28 05:51:03
+export PATH="$PATH:/Users/ashishkhuraishi/.local/bin"
